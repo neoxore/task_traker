@@ -12,6 +12,10 @@ router = APIRouter(
 async def get_all_tasks() -> list[Tasks_Schema]:
     return await TasksDAO.find_all_func()
 
+@router.get('/{task_id}')
+async def get_task_id(task_id: int):
+    return await TasksDAO.find_one_or_none(task_id)
+
 @router.post('')
 async def add_task(
     task: Annotated[Tasks_Schema, Depends()]
