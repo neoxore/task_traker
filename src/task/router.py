@@ -9,7 +9,7 @@ router = APIRouter(
 )
 
 @router.get('')
-async def get_all_tasks() -> list[Tasks_Schema]:
+async def get_all_tasks() -> list[Tasks_SchemaID]:
     return await TasksDAO.find_all_func()
 
 @router.get('/{task_id}')
