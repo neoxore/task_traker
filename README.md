@@ -14,8 +14,8 @@ TaskFlow is a powerful task tracker designed for efficient task management. The 
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/your-username/taskflow.git
-cd taskflow
+git clone https://github.com/neoxore/task_traker
+cd task_tracker
 ```
 
 2. **Create and activate a virtual environment**
