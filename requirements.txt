@@ -7,3 +7,4 @@ fastapi
 pydantic
 pydantic-settings
 uvicorn
+email-validator
